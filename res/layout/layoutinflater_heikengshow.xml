@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.example.happyfishing.image.ImageRequestView
+        android:id="@+id/img_fishpit_itemshow"
+        android:layout_width="@dimen/img_fishpit_itmeshow"
+        android:layout_height="@dimen/img_fishpit_itmeshow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_fishpit_itemshow_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/tv_fishpit_itmeshow_title"
+        android:layout_toRightOf="@+id/img_fishpit_itemshow"
+        android:text="我是鱼坑名" />
+
+    <TextView
+        android:id="@+id/tv_fishpit_itemshow_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_fishpit_itemshow_title"
+        android:layout_toRightOf="@+id/img_fishpit_itemshow"
+        android:singleLine="true"
+        android:ems="10"
+        android:text="我是渔坑简介我是渔坑简介我是渔坑简介我是渔坑简介我是渔坑简介我是渔坑简介我是渔坑简介我是渔坑简介" 
+        />
+
+    <ImageView
+        android:id="@+id/img_fishpit_itemshow_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_fishpit_itemshow_detail"
+        android:src="@drawable/ic_arrows_right"
+        android:paddingRight="@dimen/img_fishpit_itmeshow_rightpadding" />
+    
+</RelativeLayout>
